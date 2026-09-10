@@ -1,6 +1,8 @@
+use crate::card::MTGCard;
+
 
 #[derive(Debug)]
-pub enum MTGZone {
+pub enum MTGZoneType {
     Battlefield,
     Command,
     Exile,
@@ -8,4 +10,10 @@ pub enum MTGZone {
     Hand,
     Library,
     Stack
+}
+
+#[derive(Debug)]
+pub struct MTGZone {
+    pub type_: MTGZoneType,
+    pub cards: Vec<MTGCard>
 }
