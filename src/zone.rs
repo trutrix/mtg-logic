@@ -1,4 +1,4 @@
-use crate::card::MTGCard;
+use crate::{card::MTGCard, player::MTGPlayer};
 
 
 #[derive(Debug)]
@@ -9,7 +9,8 @@ pub enum MTGZoneType {
     Graveyard,
     Hand,
     Library,
-    Stack
+    Stack,
+    // Ante, not sure who would actually want this
 }
 
 #[derive(Debug)]
